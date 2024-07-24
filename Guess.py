@@ -42,28 +42,25 @@ if (value > end) or (value < start):
 # Game 1
 while g_type == 1:
     Rnd = random.randint(start, end)
-    #print(start, end, Rnd)     # see output values
+
     if value == Rnd:
         print(f"Looks like I guessed your number. It's {value}")
         break
     elif value != Rnd:
         feedback = input(f'is your number higher or lower than {Rnd}?: ').strip().lower()
         print()
-        if feedback == 'higher': #and Rnd < end:
+        if feedback == 'higher':
             start = Rnd + 1
-        elif feedback == 'lower': #and Rnd > start:
+        elif feedback == 'lower':
             end = Rnd - 1
         elif feedback not in ('higher','lower'):
             print(f"invalid input. Please indicate higher or lower ")
             print()
 
-            #print(f"invalid input. Please indicate higher or lower ")
-            #print()
-
 # Game 2
 Rnd = random.randint(start, end)
 while g_type == 2:
-    #print(start, end, Rnd)
+
     if Rnd == value:
         print(f"Looks like you guessed my number. It's {value}")
         break
