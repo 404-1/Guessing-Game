@@ -40,6 +40,7 @@ if (value > end) or (value < start):
     print()
 
 # Game 1
+
 while g_type == 1:
     Rnd = random.randint(start, end)
 
