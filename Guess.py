@@ -21,7 +21,6 @@ while g_type not in {1,2}:
                    
             '\n' f'or' '\n' f'Type 2 if you would like to guess my number between {start} and {end}: '))
 
-
 # Loop to select game based on user input
 if g_type == 1:
     print()
@@ -54,7 +53,7 @@ while g_type == 1:
             start = Rnd + 1
         elif feedback == 'lower':
             end = Rnd - 1
-        elif feedback not in ('higher','lower'):
+        elif feedback not in {'higher','lower'}:
             print(f"invalid input. Please indicate higher or lower ")
             print()
 
