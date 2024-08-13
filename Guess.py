@@ -17,9 +17,9 @@ g_type = int(input(f'Type 1 if you would like me to guess your number '
 # Loop to make sure user enters 1 or 2
 while g_type not in {1,2}:
         print()
-        g_type = input(f'Invalid input.{'\n'}Please Type 1 if you would like me to guess your number between {start} and {end} '
+        g_type = int(input(f'Invalid input.{'\n'}Please Type 1 if you would like me to guess your number between {start} and {end} '
                    
-            '\n' f'or' '\n' f'Type 2 if you would like to guess my number between {start} and {end}: ')
+            '\n' f'or' '\n' f'Type 2 if you would like to guess my number between {start} and {end}: '))
 
 
 # Loop to select game based on user input
