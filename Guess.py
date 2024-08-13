@@ -21,6 +21,7 @@ while g_type not in {1,2}:
                    
             '\n' f'or' '\n' f'Type 2 if you would like to guess my number between {start} and {end}: ')
 
+
 # Loop to select game based on user input
 if g_type == 1:
     print()
